@@ -12,5 +12,5 @@ callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
 llm = GPT4All(model="./models/ggml-model-q4_0.bin", callback_manager=callback_manager, verbose=True)
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
-question = "What happens when it rains somewhere?"
+question = "What is a good name for a company that makes eco-friendly bottles?"
 llm_chain.run(question)
